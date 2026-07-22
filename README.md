@@ -12,13 +12,11 @@ RetailOps 360 is an enterprise retail operations and analytics platform that com
 - FastAPI
 - React.js
 - Power BI
-- Grafana
 - Docker
 
 ## System Architecture
 
-<img width="700" height="400" alt="ChatGPT Image Jul 22, 2026, 10_39_06 AM" src="https://github.com/user-attachments/assets/69d1d610-0736-4b95-97db-c7f7d8c61a2b" />
-
+<img width="800" height="600" alt="ChatGPT Image Jul 22, 2026, 10_39_06 AM" src="https://github.com/user-attachments/assets/69d1d610-0736-4b95-97db-c7f7d8c61a2b" />
 
 ## ETL Pipeline
 
@@ -46,10 +44,8 @@ PostgreSQL contains:
 - Gold layer for analytical data
 - Fact and Dimension tables
 - Materialized Views
-- Views
 - Stored Procedures
 - Triggers
-- Audit Logs
 
 ## Apache Kafka
 
@@ -77,8 +73,6 @@ Retail_ETL_Pipeline
 
 → Materialized View Refresh
 
-→ ETL Logging
-
 ## FastAPI Backend
 
 Provides REST APIs for:
@@ -88,7 +82,6 @@ Provides REST APIs for:
 - Inventory Management
 - Customer Analytics
 - Promotions
-- Pricing Recommendation
 - Live Monitoring
 - Kafka Streaming
 
@@ -112,10 +105,6 @@ Power BI provides business intelligence dashboards for:
 - Inventory Dashboard
 - Customer Dashboard
 - Store Operations Dashboard
-
-## Grafana
-
-Grafana provides real-time visualization and monitoring for Kafka streaming data, live orders, inventory events, delivery tracking, and system metrics.
 
 ## Project Flow
 
@@ -141,7 +130,7 @@ PostgreSQL
 
 Kafka
 
-→ Grafana Live Monitoring
+→ Live Monitoring
 
 Airflow
 
@@ -159,6 +148,5 @@ Airflow
 - FastAPI REST APIs
 - React Monitoring Dashboard
 - Power BI Business Intelligence
-- Grafana Live Monitoring
 - Dockerized Services
 - Retail Analytics & KPI Dashboards
