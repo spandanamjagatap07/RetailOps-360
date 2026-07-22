@@ -109,31 +109,21 @@ Power BI provides business intelligence dashboards for:
 ## Project Flow
 
 CSV Retail Datasets
-
 → Python ETL
-
 → PostgreSQL Bronze Layer
-
 → PostgreSQL Silver Layer
-
 → PostgreSQL Gold Layer
-
 → Kafka
-
 → FastAPI
-
 → React Dashboard
 
 PostgreSQL
-
 → Power BI Dashboards
 
 Kafka
-
 → Live Monitoring
 
 Airflow
-
 → ETL Automation & Kafka Streaming
 
 ## Key Features
