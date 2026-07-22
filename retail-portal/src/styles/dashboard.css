@@ -1,0 +1,1300 @@
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.content {
+    margin-left: 250px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    max-width: calc(100vw - 250px);
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: #f5f7fa;
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   STORE PERFORMANCE HEADER
+===================================================== */
+
+.store-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.store-section-header h2 {
+    margin: 0;
+}
+
+.store-section-header span {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   STORE GRID
+===================================================== */
+
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   STORE CARD
+===================================================== */
+
+.store-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    min-width: 0;
+    min-height: 220px;
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.store-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   STORE TITLE
+===================================================== */
+
+.store-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.store-title h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.location-icon {
+    color: #4f46e5;
+    font-size: 22px;
+}
+
+
+/* =====================================================
+   STORE METRICS
+===================================================== */
+
+.store-metric {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.store-metric div {
+    display: flex;
+    flex-direction: column;
+}
+
+.store-metric span {
+    color: #64748b;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.store-metric strong {
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.revenue-icon {
+    color: #16a34a;
+    font-size: 24px;
+}
+
+.orders-icon {
+    color: #2563eb;
+    font-size: 24px;
+}
+
+
+/* =====================================================
+   PERFORMANCE STATUS
+===================================================== */
+
+.performance-status {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+
+    background: #dcfce7;
+    color: #15803d;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   DASHBOARD - RETAIL COMMAND CENTER
+===================================================== */
+
+.dashboard-title {
+    margin-bottom: 35px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+}
+
+
+/* =====================================================
+   DASHBOARD KPI GRID
+===================================================== */
+
+.dashboard-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+
+/* =====================================================
+   DASHBOARD KPI CARD
+===================================================== */
+
+.dashboard-kpi-card {
+    background: #ffffff;
+    min-height: 210px;
+    padding: 32px;
+
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    border-radius: 16px;
+    border-top: 5px solid;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.dashboard-kpi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =====================================================
+   KPI ICON
+===================================================== */
+
+.dashboard-kpi-icon {
+    width: 65px;
+    height: 65px;
+
+    min-width: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+}
+
+
+/* =====================================================
+   KPI INFORMATION
+===================================================== */
+
+.dashboard-kpi-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-kpi-title {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #64748b;
+}
+
+.dashboard-kpi-info h2 {
+    margin: 8px 0 5px 0;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.dashboard-kpi-info p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #94a3b8;
+}
+
+
+/* =====================================================
+   REVENUE KPI CARD
+===================================================== */
+
+.revenue-kpi {
+    border-top-color: #16a34a;
+}
+
+.revenue-kpi .dashboard-kpi-icon {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+
+/* =====================================================
+   ORDERS KPI CARD
+===================================================== */
+
+.orders-kpi {
+    border-top-color: #2563eb;
+}
+
+.orders-kpi .dashboard-kpi-icon {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   STORES KPI CARD
+===================================================== */
+
+.stores-kpi {
+    border-top-color: #ea580c;
+}
+
+.stores-kpi .dashboard-kpi-icon {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+
+/* =====================================================
+   CUSTOMER INTELLIGENCE CENTER
+===================================================== */
+
+.customer-page {
+    padding-bottom: 40px;
+}
+
+
+/* ================= CUSTOMER HEADER ================= */
+
+.customer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.customer-header h1 {
+    margin: 0 0 6px 0;
+}
+
+.customer-subtitle {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+.customer-count {
+    color: #64748b;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* ================= CUSTOMER TOOLBAR ================= */
+
+.customer-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    background: white;
+
+    padding: 15px 18px;
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ================= CUSTOMER SEARCH ================= */
+
+.customer-search {
+    flex: 1;
+    position: relative;
+}
+
+.customer-search input {
+    width: 100%;
+    height: 44px;
+
+    padding: 0 15px 0 45px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition: 0.2s;
+}
+
+.customer-search input:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+
+    left: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 16px;
+
+    z-index: 1;
+}
+
+
+/* ================= CUSTOMER SEGMENT FILTER ================= */
+
+.segment-filter {
+    min-width: 170px;
+    height: 44px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+
+    background: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+.segment-filter:focus {
+    border-color: #2563eb;
+}
+
+
+/* ================= CUSTOMER TABLE CONTAINER ================= */
+
+.customer-table-container {
+    width: 100%;
+
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ================= CUSTOMER TABLE ================= */
+
+.customer-table {
+    width: 100%;
+
+    margin: 0;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    box-shadow: none;
+}
+
+.customer-table thead {
+    background: linear-gradient(
+        90deg,
+        #4f46e5,
+        #2563eb
+    );
+}
+
+.customer-table thead th {
+    padding: 16px 18px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    border: none;
+}
+
+.customer-table tbody td {
+    padding: 14px 18px;
+    font-size: 16px;
+    border-bottom: 1px solid #edf2f7;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.customer-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.customer-table tbody tr:hover {
+    background: #eef4ff;
+    transition: background 0.2s ease;
+}
+
+
+/* ================= CUSTOMER ID ================= */
+
+.customer-id-badge {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    background: #eef2ff;
+
+    color: #4338ca;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ================= CUSTOMER NAME ================= */
+
+.customer-name {
+    font-weight: 600;
+
+    color: #1e293b;
+}
+
+
+/* ================= CUSTOMER ORDERS ================= */
+
+.customer-orders {
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+
+/* ================= CUSTOMER REVENUE ================= */
+
+.customer-revenue {
+    color: #16a34a;
+
+    font-weight: 700;
+}
+
+
+/* ================= CUSTOMER AOV ================= */
+
+.customer-aov {
+    color: #334155;
+
+    font-weight: 600;
+}
+
+
+/* ================= SEGMENT BADGES ================= */
+
+.segment-badge {
+    display: inline-block;
+
+    min-width: 70px;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.segment-vip {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.segment-loyal {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.segment-regular {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.segment-standard {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+
+/* ================= NO CUSTOMERS ================= */
+
+.no-customers {
+    text-align: center !important;
+
+    padding: 35px !important;
+
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+
+/* ================= CUSTOMER PAGINATION ================= */
+
+.customer-pagination {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 20px;
+
+    padding: 5px 2px;
+}
+
+.pagination-info {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.pagination-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.pagination-buttons button {
+    padding: 9px 18px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    background: white;
+
+    color: #334155;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.pagination-buttons button:hover:not(:disabled) {
+    background: #2563eb;
+
+    border-color: #2563eb;
+
+    color: white;
+}
+
+.pagination-buttons button:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+}
+
+.page-number {
+    padding: 8px 12px;
+
+    color: #475569;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =====================================================
+   PROMOTION ANALYTICS CENTER
+===================================================== */
+
+.promotion-page {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.promotion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 22px;
+}
+
+.promotion-header h1 {
+    margin: 0 0 8px 0;
+}
+
+.promotion-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+.promotion-count {
+    color: #64748b;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   SEARCH + FILTER CONTAINER
+===================================================== */
+
+.promotion-controls {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #ffffff;
+
+    padding: 15px;
+
+    margin-bottom: 24px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SEARCH BAR
+===================================================== */
+
+.promotion-search {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+}
+
+.promotion-search-icon {
+    position: absolute;
+
+    left: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #64748b;
+    font-size: 17px;
+
+    pointer-events: none;
+}
+
+.promotion-search input {
+    width: 100%;
+    height: 44px;
+
+    padding: 0 15px 0 45px;
+
+    background: #ffffff;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.promotion-search input::placeholder {
+    color: #94a3b8;
+}
+
+.promotion-search input:hover {
+    border-color: #94a3b8;
+}
+
+.promotion-search input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =====================================================
+   STATUS FILTER
+===================================================== */
+
+.promotion-filter {
+    width: 160px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    padding: 0 14px;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    outline: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+.promotion-filter:hover {
+    border-color: #94a3b8;
+}
+
+.promotion-filter:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =====================================================
+   TABLE CONTAINER
+===================================================== */
+
+.promotion-table-container {
+    width: 100%;
+    max-width: 100%;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.06);
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.promotion-table {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+
+/* =====================================================
+   TABLE HEADER
+===================================================== */
+
+.promotion-table thead {
+    background:
+        linear-gradient(
+            90deg,
+            #4f46e5,
+            #2563eb
+        );
+}
+
+.promotion-table thead th {
+    padding: 15px 8px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    border: none;
+}
+
+
+/* =====================================================
+   TABLE BODY
+===================================================== */
+
+.promotion-table tbody td {
+    padding: 13px 10px;
+
+    color: #1e293b;
+
+    font-size: 14px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    box-sizing: border-box;
+}
+
+.promotion-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.promotion-table tbody tr:hover {
+    background: #eef4ff;
+
+    transition: background 0.2s ease;
+}
+
+.promotion-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =====================================================
+   COLUMN WIDTHS
+
+   Current visible columns:
+   Campaign
+   Discount
+   Duration
+   Start Date
+   End Date
+   Status
+===================================================== */
+
+
+/* Campaign */
+
+.promotion-table th:nth-child(1),
+.promotion-table td:nth-child(1) {
+    width: 27%;
+}
+
+
+/* Discount */
+
+.promotion-table th:nth-child(2),
+.promotion-table td:nth-child(2) {
+    width: 13%;
+}
+
+
+/* Duration */
+
+.promotion-table th:nth-child(3),
+.promotion-table td:nth-child(3) {
+    width: 13%;
+}
+
+
+/* Start Date */
+
+.promotion-table th:nth-child(4),
+.promotion-table td:nth-child(4) {
+    width: 16%;
+}
+
+
+/* End Date */
+
+.promotion-table th:nth-child(5),
+.promotion-table td:nth-child(5) {
+    width: 16%;
+}
+
+
+/* Status */
+
+.promotion-table th:nth-child(6),
+.promotion-table td:nth-child(6) {
+    width: 15%;
+}
+
+
+/* =====================================================
+   CAMPAIGN NAME
+===================================================== */
+
+.campaign-name {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    color: #1e293b;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-align: left;
+
+    white-space: nowrap;
+
+    overflow: visible;
+
+    text-overflow: clip;
+
+    word-break: normal;
+
+    overflow-wrap: normal;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   PROMOTION ID
+   Keep this in case Promotion ID is used later
+===================================================== */
+
+.promotion-id {
+    display: inline-block;
+
+    padding: 5px 8px;
+
+    background: #eef2ff;
+
+    color: #4338ca;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   DISCOUNT BADGE
+===================================================== */
+
+.discount-badge {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    background: #fef3c7;
+
+    color: #d97706;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   DURATION
+===================================================== */
+
+.promotion-duration {
+    color: #334155;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.promotion-date {
+    color: #334155;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   STATUS BADGE - COMMON
+===================================================== */
+
+.promotion-status {
+    display: inline-block;
+
+    min-width: 75px;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   UPCOMING STATUS - GREEN
+===================================================== */
+
+.promotion-status.upcoming {
+    background: #dcfce7;
+
+    color: #15803d;
+}
+
+
+/* =====================================================
+   EXPIRED STATUS - RED
+===================================================== */
+
+.promotion-status.expired {
+    background: #fee2e2;
+
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   ACTIVE STATUS - BLUE
+   Optional if you have active campaigns
+===================================================== */
+
+.promotion-status.active {
+    background: #dbeafe;
+
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   NO PROMOTIONS
+===================================================== */
+
+.no-promotions {
+    padding: 35px !important;
+
+    color: #64748b !important;
+
+    font-size: 15px !important;
+
+    text-align: center !important;
+}
+
+
+/* =====================================================
+   PAGINATION
+===================================================== */
+
+.promotion-pagination {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 20px;
+
+    box-sizing: border-box;
+}
+
+.pagination-info {
+    color: #64748b;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+.pagination-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.pagination-buttons button {
+    padding: 9px 18px;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.pagination-buttons button:hover:not(:disabled) {
+    background: #2563eb;
+
+    color: #ffffff;
+
+    border-color: #2563eb;
+}
+
+.pagination-buttons button:disabled {
+    background: #f8fafc;
+
+    color: #94a3b8;
+
+    cursor: not-allowed;
+}
+
+.pagination-buttons span {
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .promotion-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .promotion-controls {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .promotion-filter {
+        width: 100%;
+    }
+
+    .promotion-table thead th {
+        padding: 12px 5px;
+
+        font-size: 13px;
+    }
+
+    .promotion-table tbody td {
+        padding: 11px 5px;
+
+        font-size: 12px;
+    }
+
+    .campaign-name {
+        font-size: 12px;
+    }
+
+    .promotion-pagination {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+}

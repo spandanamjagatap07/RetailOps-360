@@ -1,0 +1,40 @@
+.inventory-kpi-card{
+    background:#fff;
+    border-radius:16px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    min-width:250px;
+}
+
+.inventory-kpi-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px rgba(0,0,0,.12);
+}
+
+.inventory-kpi-icon{
+    width:60px;
+    height:60px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:28px;
+}
+
+.inventory-kpi-content p{
+    margin:0;
+    color:#6b7280;
+    font-size:14px;
+}
+
+.inventory-kpi-content h2{
+    margin-top:6px;
+    margin-bottom:0;
+    font-size:28px;
+    color:#1f2937;
+}

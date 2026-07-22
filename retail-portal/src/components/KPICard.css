@@ -1,0 +1,39 @@
+.kpi-card{
+
+    width:240px;
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+.kpi-icon{
+
+    font-size:35px;
+
+}
+
+.kpi-card h4{
+
+    margin:0;
+
+    color:gray;
+
+}
+
+.kpi-card h2{
+
+    margin-top:10px;
+
+}

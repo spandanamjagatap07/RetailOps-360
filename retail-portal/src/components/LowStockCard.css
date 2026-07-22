@@ -1,0 +1,107 @@
+.low-stock-card{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.low-stock-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.low-stock-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:18px;
+
+}
+
+.product-icon{
+
+    color:#2563eb;
+
+    font-size:22px;
+
+}
+
+.low-stock-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#6b7280;
+
+    margin-bottom:18px;
+
+}
+
+.stock-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:10px 0;
+
+}
+
+.critical{
+
+    margin-top:18px;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+    font-weight:600;
+
+}
+
+.warning{
+
+    margin-top:18px;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+    font-weight:600;
+
+}

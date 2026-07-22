@@ -1,0 +1,58 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 260px;
+    height: 100vh;
+
+    background: #17203a;
+
+    padding: 25px 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+.sidebar a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 18px;
+
+    border-radius: 10px;
+
+    margin-bottom: 12px;
+
+    font-size: 18px;
+
+    display: block;
+
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+
+    background: #4f46e5;
+
+}
+
+.sidebar a.active {
+
+    background: #4f46e5;
+
+}
