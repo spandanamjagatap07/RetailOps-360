@@ -16,7 +16,7 @@ RetailOps 360 is an enterprise retail operations and analytics platform that com
 
 ## System Architecture
 
-<img width="800" height="600" alt="ChatGPT Image Jul 22, 2026, 10_39_06 AM" src="https://github.com/user-attachments/assets/69d1d610-0736-4b95-97db-c7f7d8c61a2b" />
+<img width="800" height="500" alt="ChatGPT Image Jul 22, 2026, 10_39_06 AM" src="https://github.com/user-attachments/assets/69d1d610-0736-4b95-97db-c7f7d8c61a2b" />
 
 ## ETL Pipeline
 
